@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Tarea2Menus</string>
+    <string name="fernando">fernando cervantes</string>
+    <string name="man">Hombre</string>
+    <string name="woman">Mujer</string>
+    <string name="Other">Otro</string>
+    <string name="training">Dias de entrenamiento</string>
+    <string name="bien">Bienvenido</string>
+    <string name="usuarioo">Usuario</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="usuarioText">fulano</string>
+    <string name="contraseniaText">********</string>
+    <string name="login">Entrar</string>
+    <string name="register">Registrar</string>
+    <string name="genre">Genero</string>
+    <string name="monday">lunes</string>
+    <string name="thursday">martes</string>
+    <string name="wend">miercoles</string>
+    <string name="tusd">jueves</string>
+    <string name="friday">viernes</string>
+    <string name="saturday">sabado</string>
+    <string name="allbefore">Todos los anteriores</string>
+    <string name="goal">Cual es tu meta principal?</string>
+    <string name="comment1">Comentario personal</string>
+    <string name="send">Enviar</string>
+    <string name="settingss">settingss</string>
+    <string name="menuguardar">menuguardar</string>
+    <string name="menunuevo">menunuevo</string>
+    <string name="info">El objetivo de esta aplicacion es apoyar al usuario para que tenga una mejor condicion fisica mediante
+    el asesoramiento respecto a maquinas de entrenamiento  , alimentos y estilos de vida para alcanzar su objetivo mas rapido</string>
+    <string name="menu_informacion" />
+    <string name="settings">settings\n</string>
+    <string name="profile">Perfil</string>
+    <string name="settingsss">Configurar</string>
+    <string name="modifyPlan">Modificar Plan</string>
+    <string name="closeSession">Salir</string>
+    <string name="open_drawer">open_drawer\n</string>
+    <string name="close_drawer">close_drawer\n</string>
+    <string name="searchTrainer">Buscar entrenador\n</string>
+    <string name="calendar">Calendario\n</string>
+    <string name="goals">"Metas "</string>
+    <string name="foods">Comida\n</string>
+    <string name="news">Noticias</string>
+
+
+</resources>
