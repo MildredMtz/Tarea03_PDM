@@ -61,6 +61,7 @@
     <string name="measures">Ingresa estatura y medidas </string>
     <string name="measures2">cintura, glúteos, brazos, etc</string>
     <string name="weight2">Ingresa peso en kg</string>
+    <string name="exercise1">Ejercicios en Casa</string>
 
 
 </resources>
