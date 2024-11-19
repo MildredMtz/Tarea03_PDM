@@ -38,9 +38,9 @@
     <string name="close_drawer">close_drawer\n</string>
     <string name="searchTrainer">Buscar entrenador\n</string>
     <string name="calendar">Calendario\n</string>
-    <string name="goals">"Ejercicios "</string>
+    <string name="goals">"Ejercicios en casa "</string>
     <string name="foods">Comida\n</string>
-    <string name="news">Noticias</string>
+    <string name="news"> Ejercicios en Gimnasio</string>
     <string name="selected_date_label">Fecha seleccionada:</string>
     <string name="event_name">Nombre del evento:</string>
     <string name="save_event">Guardar evento:</string>
@@ -61,7 +61,24 @@
     <string name="measures">Ingresa estatura y medidas </string>
     <string name="measures2">cintura, glúteos, brazos, etc</string>
     <string name="weight2">Ingresa peso en kg</string>
-    <string name="exercise1">Ejercicios en Casa</string>
-
-
+    <string name="exercise1">Estiramientos</string>
+    <string name="description1">Estiramientos para antes y después de entrenar </string>
+    <string name="exercise2">Cuadripces</string>
+    <string name="exercise3">Glúteo y Femoral</string>
+    <string name="exercise4">Espalda y Hombro</string>
+    <string name="exercise5">Abdomen Tríceps y Bíceps</string>
+    <string name="description2">Ejercicios para cuadriceps sin material </string>
+    <string name="description3">Ejercicios para glúteo y femoral sin material </string>
+    <string name="description4">Ejercicios para espalda y hombro sin material </string>
+    <string name="description5">Ejercicios para abdomen tríceps y bíceps sin material </string>
+    <string name="exercise_gym1">Pierna completa</string>
+    <string name="description_gym1">Estiramientos para antes y después de entrenar </string>
+    <string name="exercise_gym2">Ejercicios para cuadripces</string>
+    <string name="exercise_gym3">Ejercicios para glúteo y femoral</string>
+    <string name="exercise_gym4">Ejercicios para espalda y hombro</string>
+    <string name="exercise_gym5">Ejercicios para abdomen tríceps y bíceps</string>
+    <string name="description_gym2">Ejercicios para cuadriceps sin material </string>
+    <string name="description_gym3">Ejercicios para glúteo y femoral sin material </string>
+    <string name="description_gym4">Ejercicios para espalda y hombro sin material </string>
+    <string name="description_gym5">Ejercicios para abdomen tríceps y bíceps sin material </string>
 </resources>

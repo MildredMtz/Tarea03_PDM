@@ -20,47 +20,59 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
 import android.content.Intent;
 import android.os.Bundle;
 
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
 public class CalendarActivity extends AppCompatActivity {
 
+    private CalendarView calendarView;
+    private TextView selectedDateTextView;
+    private EditText eventNameEditText;
+    private Button saveEventButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar); // Usar el layout para el calendario
-        EdgeToEdge.enable(this); // Asegúrate de que esta función esté configurada correctamente
+        setContentView(R.layout.activity_calendar);
 
-        // Aplicar padding para las barras del sistema (estatus, navegación, etc.)
-        // Cambia 'calendar_view' por el ID correcto de la vista que contiene el calendario
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        Intent intent = new Intent(this, CalendarActivity.class);
+        startActivity(intent);
+
+        // Inicializar vistas
+        calendarView = findViewById(R.id.calendar_view);
+        selectedDateTextView = findViewById(R.id.selected_date);
+        eventNameEditText = findViewById(R.id.event_name);
+        saveEventButton = findViewById(R.id.save_event_button);
+        setContentView(R.layout.activity_calendar);
+
+
+        // Configurar evento al seleccionar una fecha
+        calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
+            String selectedDate = dayOfMonth + "/" + (month + 1) + "/" + year;
+            selectedDateTextView.setText(selectedDate);
+        });
+
+        // Configurar botón para guardar eventos
+        saveEventButton.setOnClickListener(v -> {
+            String eventName = eventNameEditText.getText().toString();
+            String selectedDate = selectedDateTextView.getText().toString();
+
+            if (eventName.isEmpty()) {
+                Toast.makeText(this, "Por favor ingresa un nombre para el evento", Toast.LENGTH_SHORT).show();
+            } else {
+                // Aquí puedes implementar la lógica para guardar el evento
+                Toast.makeText(this, "Evento \"" + eventName + "\" guardado para " + selectedDate, Toast.LENGTH_SHORT).show();
+            }
         });
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Infla el menú de opciones; esto agregará los elementos al ActionBar si está presente.
-        getMenuInflater().inflate(R.menu.menu1, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Maneja los ítems seleccionados del menú
-        if (item.getItemId() == R.id.menu_info) {
-            // Acción para 'menu_info', por ejemplo, mostrar un mensaje o hacer algo
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
+
+

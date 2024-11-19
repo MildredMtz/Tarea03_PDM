@@ -27,6 +27,11 @@
             android:label="SHARE"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
+            android:name=".CalendarActivity"
+            android:exported="false"
+            android:label="CALENDAR"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
             android:name=".Secundaria2Activity"
             android:exported="false"
             android:label="INFO"

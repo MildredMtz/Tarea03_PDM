@@ -61,8 +61,6 @@ public class Inicio1Activity extends AppCompatActivity {
                 R.layout.spinner_item);
         cmbOpciones.setAdapter(adaptador);
 
-
-
         final Button btnHola = (Button)findViewById(R.id.BtnEnviar);
 
         //Implementamos el evento "click" del botón
@@ -78,21 +76,16 @@ public class Inicio1Activity extends AppCompatActivity {
 
         });
 
-
-
-
         ///  lo nuevo
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-
 
         // Configurar el toggle para abrir y cerrar el drawer
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open_drawer, R.string.close_drawer);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         // Configurar listener para los elementos del NavigationView
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -115,17 +108,12 @@ public class Inicio1Activity extends AppCompatActivity {
             }
         });
 
-        ///
-
-
         //Esto ya estaba
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
 
     }
 
@@ -156,12 +144,21 @@ public class Inicio1Activity extends AppCompatActivity {
 
             */
          if (item.getItemId()==R.id.menu_info){
-             Log.i("ActionBar", "info!");
-             Intent intent = new Intent(Inicio1Activity.this, Secundaria2Activity.class);
+             Log.i("ActionBar", "calendar!");
+             // Ahora lanzamos CalendarActivity
+             Intent intent = new Intent(Inicio1Activity.this, CalendarActivity.class);
              startActivity(intent);
-
              return true;
-        }
+
+         }
+
+
+
+
+
+
+
+
         if (item.getItemId()==R.id.menu_share){
             Log.i("ActionBar", "Share!");;
             Intent intent = new Intent(Inicio1Activity.this, Share2Activity.class);
@@ -173,13 +170,14 @@ public class Inicio1Activity extends AppCompatActivity {
             return true;
         }
 
-
         if( R.id.menu_profile==item.getItemId()){
             Log.i("ActionBar", "Profile!");;
             return true;
         }
         if( R.id.menu_modify_Plan==item.getItemId()){
             Log.i("ActionBar", "Modify Plan!");;
+            Intent intent = new Intent(Inicio1Activity.this, Share2Activity.class);
+            startActivity(intent);
             return true;
         }
 
@@ -193,7 +191,5 @@ public class Inicio1Activity extends AppCompatActivity {
         }
        return super.onOptionsItemSelected(item);
     }
-
-
 
 }
