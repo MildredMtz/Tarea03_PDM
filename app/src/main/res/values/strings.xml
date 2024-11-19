@@ -81,4 +81,12 @@
     <string name="description_gym3">Ejercicios con mancuernas y máquinas para glúteo y femoral  </string>
     <string name="description_gym4">Ejercicios con mancuernas y máquinas para espalda y hombro  </string>
     <string name="description_gym5">Ejercicios con mancuernas y máquinas para tríceps y bíceps  </string>
+    <string name="name_user">Nombre de Usuario</string>
+    <string name="email_user">usuario@gmail.com</string>
+    <string name="tel_user">+1 234 567 890</string>
+    <string name="change_data">Cambiar Datos</string>
+    <string name="change_password">Cambiar Contraseña</string>
+    <string name="exit">Cerrar Sesión</string>
+    <string name="trainer_description">Encuentra a los mejores instructores para entrenar en casa o gimnasio</string>
+
 </resources>

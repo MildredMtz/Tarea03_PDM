@@ -7,6 +7,18 @@
     android:orientation="vertical"
     android:padding="8dp">
 
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/news"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/white" />
+
     <!-- CardView 1 -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
