@@ -38,9 +38,29 @@
     <string name="close_drawer">close_drawer\n</string>
     <string name="searchTrainer">Buscar entrenador\n</string>
     <string name="calendar">Calendario\n</string>
-    <string name="goals">"Metas "</string>
+    <string name="goals">"Ejercicios "</string>
     <string name="foods">Comida\n</string>
     <string name="news">Noticias</string>
+    <string name="selected_date_label">Fecha seleccionada:</string>
+    <string name="event_name">Nombre del evento:</string>
+    <string name="save_event">Guardar evento:</string>
+    <string name="lose_weight">Bajar de peso</string>
+    <string name="week">Semana 1 de 4</string>
+    <string name="nutricional_plan">Plan Nutricional</string>
+    <string name="objective">Objetivo</string>
+    <string name="gain_weight">Subir de peso</string>
+    <string name="foods_day">Comidas al día</string>
+    <string name="food1">Una rebada de pan tostado con crema de cachuate y una fruta</string>
+    <string name="food2">Tres huevos, un nopal, dos papas hervidas y un vaso de agua</string>
+    <string name="food3">Colación: Fruta con yogurt griego sin azúcar</string>
+    <string name="food4">Dos piezas de pollo chicas, una taza de arroz hervido, medio aguacate, dos tortillas y un vaso de agua</string>
+    <string name="food5">Colación: Un scoop de creatina y una galleta de avena</string>
+    <string name="food6">Un sandwich con jamón, queso, jitomate y aguacate</string>
+    <string name="food7">Recomendación: En caso de no poder hacer una comida tomar un scoop de proteína</string>
+    <string name="weight">¿Cuál es tu peso actualmente?</string>
+    <string name="measures">Ingresa estatura y medidas </string>
+    <string name="measures2">cintura, glúteos, brazos, etc</string>
+    <string name="weight2">Ingresa peso en kg</string>
 
 
 </resources>

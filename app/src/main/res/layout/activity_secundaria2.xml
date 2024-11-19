@@ -20,7 +20,7 @@
 
             android:padding="10dp"
             android:text="@string/info"
-            android:textColor="#F2EEF2"
+            android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
