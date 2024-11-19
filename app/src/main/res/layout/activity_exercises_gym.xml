@@ -19,14 +19,14 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
+            android:background="@android:color/holo_orange_dark"
             android:padding="16dp">
 
             <ImageView
                 android:id="@+id/exercise_image1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/exercise_home"
+                android:src="@drawable/exercise_gym4"
                 android:layout_marginEnd="25dp" />
 
             <LinearLayout
@@ -39,7 +39,7 @@
                     android:id="@+id/exercise_name1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/exercise1"
+                    android:text="@string/exercise_gym1"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
                     android:id="@+id/exercise_description1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/description1"
+                    android:text="@string/description_gym1"
                     android:textSize="14sp"
                     android:paddingTop="4dp"
                     android:textColor="@android:color/white" />
@@ -74,7 +74,7 @@
                 android:id="@+id/exercise_image2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/exercise_home_3"
+                android:src="@drawable/exercise_gym_2"
                 android:layout_marginEnd="25dp" />
 
             <LinearLayout
@@ -87,7 +87,7 @@
                     android:id="@+id/exercise_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/exercise2"
+                    android:text="@string/exercise_gym2"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -95,7 +95,7 @@
                     android:id="@+id/exercise_description2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/description2"
+                    android:text="@string/description_gym2"
                     android:textSize="14sp"
                     android:paddingTop="4dp"
                     android:textColor="@android:color/white" />
@@ -122,7 +122,7 @@
                 android:id="@+id/exercise_image3"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/exercise_home_2"
+                android:src="@drawable/exercise_gym_3"
                 android:layout_marginEnd="25dp" />
 
             <LinearLayout
@@ -135,7 +135,7 @@
                     android:id="@+id/exercise_name3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/exercise3"
+                    android:text="@string/exercise_gym3"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -143,7 +143,7 @@
                     android:id="@+id/exercise_description3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/description3"
+                    android:text="@string/description_gym3"
                     android:textSize="14sp"
                     android:paddingTop="4dp"
                     android:textColor="@android:color/white" />
@@ -170,7 +170,7 @@
                 android:id="@+id/exercise_image4"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/exercise_home_5"
+                android:src="@drawable/exercise_gym_1"
                 android:layout_marginEnd="25dp" />
 
             <LinearLayout
@@ -191,7 +191,7 @@
                     android:id="@+id/exercise_description4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/description4"
+                    android:text="@string/description_gym4"
                     android:textSize="14sp"
                     android:paddingTop="4dp"
                     android:textColor="@android:color/white" />
@@ -218,7 +218,7 @@
                 android:id="@+id/exercise_image5"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/exercise_home_4"
+                android:src="@drawable/exercise_gym5"
                 android:layout_marginEnd="25dp" />
 
             <LinearLayout
@@ -231,7 +231,7 @@
                     android:id="@+id/exercise_name5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/exercise5"
+                    android:text="@string/exercise_gym5"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -239,7 +239,7 @@
                     android:id="@+id/exercise_description5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/description5"
+                    android:text="@string/description_gym5"
                     android:textSize="14sp"
                     android:paddingTop="4dp"
                     android:textColor="@android:color/white" />

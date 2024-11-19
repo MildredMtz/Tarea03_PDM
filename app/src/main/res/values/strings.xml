@@ -71,14 +71,14 @@
     <string name="description3">Ejercicios para glúteo y femoral sin material </string>
     <string name="description4">Ejercicios para espalda y hombro sin material </string>
     <string name="description5">Ejercicios para abdomen tríceps y bíceps sin material </string>
-    <string name="exercise_gym1">Pierna completa</string>
-    <string name="description_gym1">Estiramientos para antes y después de entrenar </string>
-    <string name="exercise_gym2">Ejercicios para cuadripces</string>
-    <string name="exercise_gym3">Ejercicios para glúteo y femoral</string>
-    <string name="exercise_gym4">Ejercicios para espalda y hombro</string>
-    <string name="exercise_gym5">Ejercicios para abdomen tríceps y bíceps</string>
-    <string name="description_gym2">Ejercicios para cuadriceps sin material </string>
-    <string name="description_gym3">Ejercicios para glúteo y femoral sin material </string>
-    <string name="description_gym4">Ejercicios para espalda y hombro sin material </string>
-    <string name="description_gym5">Ejercicios para abdomen tríceps y bíceps sin material </string>
+    <string name="exercise_gym1">Pecho y Abdomen</string>
+    <string name="description_gym1">Ejercicios con mancuernas y máquinas para pecho y abdomen </string>
+    <string name="exercise_gym2">Cuadripces</string>
+    <string name="exercise_gym3">Glúteo y Femoral</string>
+    <string name="exercise_gym4">Espalda y Hombro</string>
+    <string name="exercise_gym5">Tríceps y Bíceps</string>
+    <string name="description_gym2">Ejercicios con mancuernas y máquinas para cuadriceps </string>
+    <string name="description_gym3">Ejercicios con mancuernas y máquinas para glúteo y femoral  </string>
+    <string name="description_gym4">Ejercicios con mancuernas y máquinas para espalda y hombro  </string>
+    <string name="description_gym5">Ejercicios con mancuernas y máquinas para tríceps y bíceps  </string>
 </resources>
