@@ -57,6 +57,11 @@
             android:label="ENTRENADOR"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity
+            android:name=".ExerciseListActivity"
+            android:exported="false"
+            android:label="ESTIRAMIENTOS"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
             android:name=".Secundaria2Activity"
             android:exported="false"
             android:label="INFO"

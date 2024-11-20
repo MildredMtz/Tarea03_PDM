@@ -1,5 +1,6 @@
 package com.example.tarea2menus;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,6 +27,9 @@ public class ExercisesHomeActivity extends AppCompatActivity {
         exerciseName1 = findViewById(R.id.exercise_name1);
         exerciseDescription1 = findViewById(R.id.exercise_description1);
 
+        // Agregar clic para navegar
+        exerciseImage1.setOnClickListener(view -> navigateToList(exerciseName1.getText().toString()));
+
         // CardView 2
         exerciseImage2 = findViewById(R.id.exercise_image2);
         exerciseName2 = findViewById(R.id.exercise_name2);
@@ -46,6 +50,12 @@ public class ExercisesHomeActivity extends AppCompatActivity {
         exerciseName5 = findViewById(R.id.exercise_name5);
         exerciseDescription5 = findViewById(R.id.exercise_description5);
 
+    }
+
+    private void navigateToList(String exerciseName) {
+        Intent intent = new Intent(this, ExerciseListActivity.class);
+        intent.putExtra("exercise_name", exerciseName); // Pasar el nombre del ejercicio seleccionado
+        startActivity(intent);
     }
 
 }
