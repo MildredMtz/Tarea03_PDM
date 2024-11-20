@@ -36,7 +36,7 @@
     <string name="closeSession">Salir</string>
     <string name="open_drawer">open_drawer\n</string>
     <string name="close_drawer">close_drawer\n</string>
-    <string name="searchTrainer">Buscar entrenador\n</string>
+    <string name="searchTrainer">Buscar entrenador</string>
     <string name="calendar">Calendario\n</string>
     <string name="goals">"Ejercicios en casa "</string>
     <string name="foods">Comida\n</string>
@@ -81,6 +81,14 @@
     <string name="trainer_description">Encuentra a los mejores instructores para entrenar en casa o gimnasio</string>
     <string name="high_calories">Incluye alimentos ricos en calorías saludables como frutos secos, aguacates, avena, y proteínas magras.</string>
     <string name="low_calories">Incorpora alimentos bajos en calorías y ricos en fibra como vegetales, frutas frescas, y proteínas magras.</string>
+    <string name="coach1">LEAN BEEF PATTY</string>
+    <string name="coach2">Chris Bumstead (CBUM)</string>
+    <string name="coach3">Carlos Belcast</string>
+    <string name="coach4">Carol Vaz</string>
+    <string name="des_coach1">Instructora de fitness. Es popular por sus rutinas de entrenamiento en línea. Sus ejercicios incluyen levantamiento de pesas, flexiones y calistenia.</string>
+    <string name="des_coach2"> Es un destacado fisicoculturista profesional canadiense de la IFBB, ganador del torneo Mr. Olympia cinco años seguidos.</string>
+    <string name="des_coach3">Celebridad y atleta profesional del fitness. Ha obtenido una gran popularidad por sus consejos sobre regímenes de ejercicios, tutoriales de ejercicios y guías de dietas saludables. </string>
+    <string name="des_coach4">Instructora fitness de Brasil que ha conquistado a millones de seguidores con sus rutinas intensas y estrictas.</string>
 
 
 </resources>

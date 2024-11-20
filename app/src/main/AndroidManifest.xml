@@ -52,6 +52,11 @@
             android:label="EJERCICIOS_GYM"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity
+            android:name=".EntrenadorActivity"
+            android:exported="false"
+            android:label="ENTRENADOR"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
             android:name=".Secundaria2Activity"
             android:exported="false"
             android:label="INFO"
