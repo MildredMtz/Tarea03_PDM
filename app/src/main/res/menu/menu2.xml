@@ -17,14 +17,15 @@
         android:title="@string/calendar"
         />
     <item
-        android:id="@+id/menu_share"
-        android:title="@string/goals"
+        android:id="@+id/menu_modify_Plan"
+        android:title="@string/foods"
        />
 
 
     <item
-        android:id="@+id/menu_modify_Plan"
-        android:title="@string/foods"/>
+        android:id="@+id/menu_share"
+        android:title="@string/goals"
+        />
 
     <item
         android:id="@+id/menu_exit"

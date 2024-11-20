@@ -100,6 +100,37 @@ public class Inicio1Activity extends AppCompatActivity {
                 }
                 if(menuItem.getItemId()==R.id.menu_info){
                     Log.i("ActionBar", "info 2!");
+                    //Creamos el Intent
+                    Intent intent = new Intent(Inicio1Activity.this, CalendarActivity.class);
+                    startActivity(intent);
+
+                }
+                if(menuItem.getItemId()==R.id.menu_modify_Plan){
+                    Log.i("ActionBar", "info 2!");
+                    //Creamos el Intent
+                    Intent intent = new Intent(Inicio1Activity.this, ComidaActivity.class);
+                    startActivity(intent);
+
+                }
+                if(menuItem.getItemId()==R.id.menu_profile){
+                    Log.i("ActionBar", "info 2!");
+                    //Creamos el Intent
+                    Intent intent = new Intent(Inicio1Activity.this, PerfilActivity.class);
+                    startActivity(intent);
+
+                }
+                if(menuItem.getItemId()==R.id.menu_share){
+                    Log.i("ActionBar", "info 2!");
+                    //Creamos el Intent
+                    Intent intent = new Intent(Inicio1Activity.this, ExercisesHomeActivity.class);
+                    startActivity(intent);
+
+                }
+                if(menuItem.getItemId()==R.id.menu_exit){
+                    Log.i("ActionBar", "info 2!");
+                    //Creamos el Intent
+                    Intent intent = new Intent(Inicio1Activity.this, ExercisesGymActivity.class);
+                    startActivity(intent);
 
                 }
 
@@ -146,18 +177,11 @@ public class Inicio1Activity extends AppCompatActivity {
          if (item.getItemId()==R.id.menu_info){
              Log.i("ActionBar", "calendar!");
              // Ahora lanzamos CalendarActivity
-             Intent intent = new Intent(Inicio1Activity.this, CalendarActivity.class);
+             Intent intent = new Intent(Inicio1Activity.this, Share2Activity.class);
              startActivity(intent);
              return true;
 
          }
-
-
-
-
-
-
-
 
         if (item.getItemId()==R.id.menu_share){
             Log.i("ActionBar", "Share!");;
@@ -176,7 +200,7 @@ public class Inicio1Activity extends AppCompatActivity {
         }
         if( R.id.menu_modify_Plan==item.getItemId()){
             Log.i("ActionBar", "Modify Plan!");;
-            Intent intent = new Intent(Inicio1Activity.this, Share2Activity.class);
+            Intent intent = new Intent(Inicio1Activity.this, ComidaActivity.class);
             startActivity(intent);
             return true;
         }

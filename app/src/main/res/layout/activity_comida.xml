@@ -1,238 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawer_layout"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <!--Se coloco todo el contraintslaout dentro del drawerlayout , no se le modifico nada   -->
-
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/main"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:background="@color/green2">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <!--Esto es el titulo-->
+        <!-- Planes alimenticios -->
 
-
-        <ScrollView
-
+        <!-- Sección de dieta para subir de peso -->
+        <TextView
+            android:id="@+id/weight_gain_title"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="parent">
+            android:layout_height="wrap_content"
+            android:text="@string/gain_weight"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
+        <ImageView
+            android:id="@+id/weight_gain_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/alto_calorias"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
 
+        <TextView
+            android:id="@+id/weight_gain_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/high_calories"
+            android:background="@color/green"
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+        <!-- Sección de dieta para bajar de peso -->
+        <TextView
+            android:id="@+id/weight_loss_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lose_weight"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
+        <ImageView
+            android:id="@+id/weight_loss_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/bajo_calorias"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
 
-                <TextView
-                    android:id="@+id/Textcomida"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/nutricional_plan"
-                    android:textColor="@color/white"
-                    android:textSize="40sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/weight_loss_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/low_calories"
+            android:background="@color/green"
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
 
+        <!-- Formulario para peso y talla -->
+        <TextView
+            android:id="@+id/form_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="8dp" />
 
-                <!--Objetivo-->
-                <LinearLayout android:orientation="vertical"
+        <EditText
+            android:id="@+id/input_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:drawable/edit_text" />
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_background">
+        <EditText
+            android:id="@+id/input_talla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/measures"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text" />
 
-                    <TextView android:id="@+id/TextObjetivo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/objective"
-                        android:textColor="@color/black"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular (IMC)"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@android:color/white" />
 
-                    <RadioGroup android:id="@+id/subir_bajar"
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-
-                        <RadioButton android:id="@+id/subirPeso"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/lose_weight"
-                            android:textColor="@color/blue"/>
-                        <RadioButton android:id="@+id/bajarPeso"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/gain_weight"
-                            android:textColor="@color/blue"/>
-                    </RadioGroup>
-
-                </LinearLayout>
-
-                <!--comidas al día -->
-                <LinearLayout android:orientation="vertical"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_background">
-
-
-                    <TextView android:id="@+id/Dieta"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/foods_day"
-                        android:textColor="#000000"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout android:orientation="vertical"
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <CheckBox android:id="@+id/Comida1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/purple"
-                            android:buttonTint="#000000"
-                            android:text="@string/food1"
-                            android:checked="false" />
-
-                        <CheckBox android:id="@+id/Comida2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/purple"
-                            android:buttonTint="#000000"
-                            android:text="@string/food2"
-                            android:checked="false" />
-
-                        <CheckBox android:id="@+id/Comida3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/blue"
-                            android:buttonTint="#000000"
-                            android:text="@string/food3"
-                            android:checked="false" />
-
-                        <CheckBox android:id="@+id/Comida4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/purple"
-                            android:buttonTint="#000000"
-                            android:text="@string/food4"
-                            android:checked="false" />
-                        <CheckBox android:id="@+id/Comida5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/blue"
-                            android:buttonTint="#000000"
-                            android:text="@string/food5"
-                            android:checked="false" />
-                        <CheckBox android:id="@+id/Comida6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/purple"
-                            android:buttonTint="#000000"
-                            android:text="@string/food6"
-                            android:checked="false" />
-                        <CheckBox android:id="@+id/Comida7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/red"
-                            android:buttonTint="#000000"
-                            android:text="@string/food7"
-                            android:checked="false" />
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-
-                <LinearLayout android:orientation="vertical"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_background"
-                    android:textColor="#000000">
-
-                    <TextView android:id="@+id/Peso"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/weight"
-                        android:textColor="#000000"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/TxtPeso"
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:hint="@string/weight2"
-                        android:autofillHints=""
-                        android:inputType="text"
-                        android:textColor="#000000"
-                        android:background="#FFFFFF"/>
-
-                </LinearLayout>
-
-                <!--Comentario personal-->
-                <LinearLayout android:orientation="vertical"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="100sp"
-                    android:background="@drawable/rounded_background">
-
-                    <TextView android:id="@+id/Medidas"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/measures"
-                        android:textColor="#000000"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/TxtUsuario"
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:hint="@string/measures2"
-                        android:autofillHints=""
-                        android:inputType="text"
-                        android:textColor="#000000"
-                        android:background="#FFFFFF"/>
-
-
-                </LinearLayout>
-
-                <!--Al activar el thema en el manifest para la action bar , se desabilita las caracteristicas
-                predefinidas para las cosas como los botones , porque eso tuve que darle diseño -->
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/BtnEnviar"
-                    android:text="@string/send"
-                    android:textColor="@color/light_gray"
-                    android:paddingLeft="20dip"
-                    android:paddingRight="20dip"
-                    android:background="#97B386F2"/>
-
-            </LinearLayout>
-
-        </ScrollView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.drawerlayout.widget.DrawerLayout>
-
-
-
+    </LinearLayout>
+</ScrollView>

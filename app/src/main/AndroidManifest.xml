@@ -29,7 +29,27 @@
         <activity
             android:name=".CalendarActivity"
             android:exported="false"
-            android:label="CALENDAR"
+            android:label="CALENDARIO"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ComidaActivity"
+            android:exported="false"
+            android:label="COMIDA"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false"
+            android:label="PERFIL"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ExercisesHomeActivity"
+            android:exported="false"
+            android:label="EJERCICIOS_CASA"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ExercisesGymActivity"
+            android:exported="false"
+            android:label="EJERCICIOS_GYM"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity
             android:name=".Secundaria2Activity"

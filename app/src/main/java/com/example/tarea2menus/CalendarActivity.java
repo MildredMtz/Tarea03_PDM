@@ -43,9 +43,6 @@ public class CalendarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
-        Intent intent = new Intent(this, CalendarActivity.class);
-        startActivity(intent);
-
         // Inicializar vistas
         calendarView = findViewById(R.id.calendar_view);
         selectedDateTextView = findViewById(R.id.selected_date);
